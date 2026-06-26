@@ -1,0 +1,13 @@
+# Keep the GitHub dataset package lightweight and reproducible.
+*.r3d
+*.mp4
+*.mov
+*.m4a
+__pycache__/
+*.pyc
+relabel_app/
+viz_boxes/
+semantic_debug*/
+semantic_raw_debug*/
+server.log
+server.err.log

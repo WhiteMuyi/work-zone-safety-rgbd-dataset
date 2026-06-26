@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-26T16:05:48-04:00",
+  "dataset_dir": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500",
+  "backup_path": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\backups\\detections_corrected_before_finalize_20260626_1605480400.csv",
+  "detections_corrected_csv": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\detections_corrected.csv",
+  "bbox_depth_gt_csv": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\bbox_depth_gt.csv",
+  "bbox_depth_gt_json": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\bbox_depth_gt.json",
+  "image_count": 500,
+  "all_rows_including_deleted": 826,
+  "active_gt_rows": 806,
+  "deleted_rows": 20,
+  "count_ok_images": 500,
+  "depth_status_counts": {
+    "valid_depth": 658,
+    "not_valid_depth": 148
+  },
+  "manual_distance_band_counts": {
+    "": 658,
+    ">5": 133,
+    "3-5": 8,
+    "<3": 7
+  }
+}

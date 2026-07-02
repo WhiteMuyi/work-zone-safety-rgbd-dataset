@@ -99,5 +99,88 @@
     "final_distribution_md": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\final_distribution.md",
     "dataset_notes_zh_md": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\dataset_notes_zh.md",
     "summary_json": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\dataset_summary.json"
-  }
+  },
+  "recommended_annotation_file": "annotations/worker_gt_compact.csv",
+  "recommended_annotation_json": "annotations/worker_gt_compact.json",
+  "final_worker_gt": {
+    "updated_at_utc": "2026-07-02T18:16:15Z",
+    "image_count": 500,
+    "worker_count": 806,
+    "row_unit": "one final worker instance per row",
+    "distance_classes": [
+      "<3",
+      "3-6",
+      ">6"
+    ],
+    "distance_class_3_counts": {
+      "<3": 164,
+      "3-6": 312,
+      ">6": 330
+    },
+    "manual_distance_band_counts": {
+      "": 657,
+      ">6": 124,
+      "3-6": 18,
+      "<3": 7
+    },
+    "valid_lidar_depth_count": 657,
+    "missing_lidar_depth_count": 149,
+    "scene_type_counts": {
+      "indoor_garage": 498,
+      "outdoor_pavement_closed_road_sim": 308
+    },
+    "recording_worker_counts": {
+      "Garage1": 76,
+      "Garage2": 49,
+      "Garage3": 105,
+      "Garage4": 268,
+      "Pave1": 204,
+      "Pave2": 104
+    },
+    "semantic_counts": {
+      "high_visibility_vest": {
+        "true": 664,
+        "false": 125,
+        "uncertain": 17
+      },
+      "helmet_status": {
+        "absent": 198,
+        "uncertain": 17,
+        "worn_unsecured": 79,
+        "worn_secured": 117,
+        "worn_unknown": 382,
+        "in_hand": 13
+      },
+      "helmet_worn_binary": {
+        "false": 211,
+        "uncertain": 17,
+        "true": 578
+      },
+      "orientation": {
+        "Back": 261,
+        "Side": 246,
+        "Facing": 282,
+        "uncertain": 17
+      },
+      "occlusion_level": {
+        "none": 589,
+        "partial": 178,
+        "heavy": 31,
+        "uncertain": 8
+      },
+      "phone_status": {
+        "none": 692,
+        "uncertain": 94,
+        "call": 12,
+        "viewing": 8
+      }
+    },
+    "primary_files": [
+      "annotations/worker_gt_compact.csv",
+      "annotations/worker_gt_compact.json",
+      "annotations/worker_gt_merged.csv",
+      "annotations/worker_gt_merged.json"
+    ]
+  },
+  "legacy_frame_selection_note": "band_counts, frames.csv, detections_yolo_raw.csv, and final_distribution.md describe early frame-selection/raw YOLO provenance and may contain the old <3/3-5/>5 preliminary bands. Use final_worker_gt and worker_gt_compact for final labels."
 }

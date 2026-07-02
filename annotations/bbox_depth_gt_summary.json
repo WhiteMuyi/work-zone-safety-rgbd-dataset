@@ -1,23 +1,34 @@
 {
-  "generated_at": "2026-06-26T16:05:48-04:00",
-  "dataset_dir": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500",
-  "backup_path": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\backups\\detections_corrected_before_finalize_20260626_1605480400.csv",
-  "detections_corrected_csv": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\detections_corrected.csv",
-  "bbox_depth_gt_csv": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\bbox_depth_gt.csv",
-  "bbox_depth_gt_json": "G:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\bbox_depth_gt.json",
+  "generated_at": "2026-07-02T11:42:37-04:00",
+  "dataset_dir": "E:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500",
+  "backup_path": "E:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\backups\\detections_corrected_before_finalize_20260702_1142370400.csv",
+  "detections_corrected_csv": "E:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\detections_corrected.csv",
+  "bbox_depth_gt_csv": "E:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\bbox_depth_gt.csv",
+  "bbox_depth_gt_json": "E:\\Research\\Proximity\\Analysis\\Expe1\\dataset_500\\relabel\\bbox_depth_gt.json",
   "image_count": 500,
   "all_rows_including_deleted": 826,
   "active_gt_rows": 806,
   "deleted_rows": 20,
   "count_ok_images": 500,
   "depth_status_counts": {
-    "valid_depth": 658,
-    "not_valid_depth": 148
+    "valid_depth": 657,
+    "not_valid_depth": 149
   },
   "manual_distance_band_counts": {
-    "": 658,
-    ">5": 133,
-    "3-5": 8,
+    "": 657,
+    ">6": 124,
+    "3-6": 18,
     "<3": 7
-  }
+  },
+  "updated_at": "2026-07-02T11:44:47-04:00",
+  "distance_boundaries_m": [
+    3,
+    6
+  ],
+  "distance_class_3_counts": {
+    "<3": 164,
+    "3-6": 312,
+    ">6": 330
+  },
+  "legacy_gt5_manual_review_count": 0
 }

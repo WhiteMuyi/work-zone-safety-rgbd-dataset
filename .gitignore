@@ -11,3 +11,4 @@ semantic_debug*/
 semantic_raw_debug*/
 server.log
 server.err.log
+annotations/backups*/

@@ -1,5 +1,8 @@
 # dataset_500 final distribution
 
+> Note: this file records the early frame-selection distribution and may contain the old preliminary `<3`, `3-5`, `>5` bands. It is kept only for provenance. Final worker-level labels now use `<3`, `3-6`, `>6` in `worker_gt_compact` and `worker_gt_merged`.
+
+
 生成时间：2026-06-25T18:45:48.866527-04:00
 最终帧数：500
 同 recording 最小时间间隔：0.4 s

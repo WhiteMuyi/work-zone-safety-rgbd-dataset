@@ -1,5 +1,10 @@
 {
   "dataset_name": "workzone_rgbd_dataset_500",
+  "updated_at": "2026-07-02T11:44:47-04:00",
+  "distance_boundaries_m": [
+    3,
+    6
+  ],
   "image_count": 500,
   "worker_count": 806,
   "scene_frame_counts": {
@@ -15,31 +20,32 @@
     "Pave2": 104
   },
   "depth_status_counts": {
-    "valid_depth": 658,
-    "not_valid_depth": 148
+    "valid_depth": 657,
+    "not_valid_depth": 149
   },
   "depth_source_counts": {
     "conf2": 493,
-    "none": 148,
-    "conf1": 165
+    "none": 149,
+    "conf1": 164
   },
   "manual_distance_band_counts": {
-    "": 658,
-    ">5": 133,
-    "3-5": 8,
+    "": 657,
+    ">6": 124,
+    "3-6": 18,
     "<3": 7
   },
   "distance_class_3_counts": {
     "<3": 164,
-    "3-5": 209,
-    ">5": 433
+    "3-6": 312,
+    ">6": 330
   },
   "distance_label_source_counts": {
-    "lidar_depth_z_m": 658,
-    "manual_distance_band": 148
+    "lidar_depth_z_m": 657,
+    "manual_distance_band": 149
   },
-  "depth_train_usable_count": 658,
+  "depth_train_usable_count": 657,
   "distance_eval_usable_count": 806,
+  "legacy_gt5_manual_review_count": 0,
   "semantic_counts": {
     "high_visibility_vest": {
       "true": 664,
@@ -77,5 +83,7 @@
       "call": 12,
       "viewing": 8
     }
-  }
+  },
+  "missing_semantic_keys": [],
+  "notes": "Distance labels use <3, 3-6, >6. Manual labels are used only where numeric LiDAR depth is unavailable or manually corrected."
 }

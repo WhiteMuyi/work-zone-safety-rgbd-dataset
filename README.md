@@ -1,4 +1,4 @@
-# Work-Zone RGB-D Safety Dataset 500
+# Work-Zone RGB-D Safety Dataset
 
 This repository contains a 500-image RGB-D work-zone safety dataset built from Record3D/iPhone LiDAR recordings. The final annotations are worker-level: each row describes one worker instance, its bounding boxes, distance/depth label, and semantic safety labels.
 

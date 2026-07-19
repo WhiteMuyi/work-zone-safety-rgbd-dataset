@@ -12,3 +12,5 @@ semantic_raw_debug*/
 server.log
 server.err.log
 annotations/backups*/
+._*
+.DS_Store

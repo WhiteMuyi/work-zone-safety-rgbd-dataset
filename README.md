@@ -153,3 +153,41 @@ For each worker, the final depth value is the median depth inside the inner samp
 | `Pave1` | 204 |
 | `Pave2` | 104 |
 
+## Part 2: Second-Wave RGB + Person Depth Dataset
+
+The fully reviewed second-wave dataset is stored in
+[`workzone_rgbd_dataset_wave2/`](workzone_rgbd_dataset_wave2/). It is kept
+separate from the original 500-image release above.
+
+### Part 2 Summary
+
+- 1,185 RGB PNG images at 960 x 720 pixels.
+- 2,472 reviewed person instances.
+- 2,356 persons with a numeric LiDAR depth value.
+- 116 persons without usable numeric LiDAR depth; their reviewed coarse distance
+  class is retained.
+- Distance classes use the final `<3`, `3-6`, and `>6` meter boundaries.
+- Class counts: `<3` = 491, `3-6` = 983, and `>6` = 998.
+
+### Recommended Part 2 Files
+
+- `workzone_rgbd_dataset_wave2/images/`: reviewed RGB images.
+- `workzone_rgbd_dataset_wave2/annotations.csv`: one row per person, containing
+  the final bounding box, numeric depth where available, and distance class.
+- `workzone_rgbd_dataset_wave2/dataset_summary.json`: machine-readable dataset
+  counts and missing-depth policy.
+- `workzone_rgbd_dataset_wave2/README.md`: detailed schema and usage notes.
+
+The compact Part 2 annotation table contains:
+
+```text
+worker_key,image_id,image_path,worker_index,
+bbox_x1,bbox_y1,bbox_x2,bbox_y2,
+depth_z_m,distance_class_3
+```
+
+`depth_z_m` is blank when no usable LiDAR point was available for that person.
+In those cases, `distance_class_3` still contains the manually reviewed `<3`,
+`3-6`, or `>6` range. Part 2 intentionally includes only RGB images and the
+final person-level annotations; raw Record3D files, depth maps, YOLO
+predictions, review artifacts, and semantic safety labels are not included.

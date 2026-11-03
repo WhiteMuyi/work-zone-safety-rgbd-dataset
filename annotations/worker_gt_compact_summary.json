@@ -1,0 +1,85 @@
+{
+  "created_from": "annotations/worker_gt_merged.json",
+  "image_count": 500,
+  "worker_count": 806,
+  "column_count": 22,
+  "columns": [
+    "worker_key",
+    "image_id",
+    "recording",
+    "scene_type",
+    "worker_index",
+    "bbox_x1",
+    "bbox_y1",
+    "bbox_x2",
+    "bbox_y2",
+    "inner_x1",
+    "inner_y1",
+    "inner_x2",
+    "inner_y2",
+    "depth_z_m",
+    "manual_distance_band",
+    "distance_class_3",
+    "high_visibility_vest",
+    "helmet_status",
+    "helmet_worn_binary",
+    "orientation",
+    "occlusion_level",
+    "phone_status"
+  ],
+  "scene_type_counts": {
+    "indoor_garage": 498,
+    "outdoor_pavement_closed_road_sim": 308
+  },
+  "distance_class_3_counts": {
+    "<3": 164,
+    "3-6": 312,
+    ">6": 330
+  },
+  "manual_distance_band_counts": {
+    "": 657,
+    ">6": 124,
+    "3-6": 18,
+    "<3": 7
+  },
+  "valid_lidar_depth_count": 657,
+  "missing_lidar_depth_count": 149,
+  "semantic_counts": {
+    "high_visibility_vest": {
+      "true": 664,
+      "false": 125,
+      "uncertain": 17
+    },
+    "helmet_status": {
+      "absent": 198,
+      "uncertain": 17,
+      "worn_unsecured": 79,
+      "worn_secured": 117,
+      "worn_unknown": 382,
+      "in_hand": 13
+    },
+    "helmet_worn_binary": {
+      "false": 211,
+      "uncertain": 17,
+      "true": 578
+    },
+    "orientation": {
+      "Back": 261,
+      "Side": 246,
+      "Facing": 282,
+      "uncertain": 17
+    },
+    "occlusion_level": {
+      "none": 589,
+      "partial": 178,
+      "heavy": 31,
+      "uncertain": 8
+    },
+    "phone_status": {
+      "none": 692,
+      "uncertain": 94,
+      "call": 12,
+      "viewing": 8
+    }
+  }
+}

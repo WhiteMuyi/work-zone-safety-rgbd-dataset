@@ -1,0 +1,34 @@
+{
+  "dataset_name": "workzone_rgbd_dataset_wave2",
+  "wave": 2,
+  "source": "Analysis/716Analysis/outputs/expe2_gt_1fps",
+  "review_status": "all source frames fully reviewed",
+  "image_format": "PNG",
+  "image_width_px": 960,
+  "image_height_px": 720,
+  "image_count": 1185,
+  "worker_count": 2472,
+  "numeric_depth_count": 2356,
+  "missing_numeric_depth_count": 116,
+  "distance_class_3_counts": {
+    "<3": 491,
+    "3-6": 983,
+    ">6": 998
+  },
+  "excluded_frame_count": 2,
+  "image_bytes": 923182294,
+  "annotation_file": "annotations.csv",
+  "columns": [
+    "worker_key",
+    "image_id",
+    "image_path",
+    "worker_index",
+    "bbox_x1",
+    "bbox_y1",
+    "bbox_x2",
+    "bbox_y2",
+    "depth_z_m",
+    "distance_class_3"
+  ],
+  "missing_depth_policy": "depth_z_m is blank when LiDAR depth is unavailable; distance_class_3 retains the reviewed human coarse range"
+}

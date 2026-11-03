@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-06-25T18:45:48.866527-04:00",
+  "input_dir": "E:\\Research\\Proximity\\Analysis\\Expe1",
+  "out_dir": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500",
+  "sample_fps": 5.0,
+  "target_total": 500,
+  "selected_frame_count": 500,
+  "selected_detection_count": 805,
+  "quota_params": {
+    "garage_far_k": 2,
+    "scarce_k": 12,
+    "default_k": 8,
+    "boundary_k": 2
+  },
+  "candidate_quality_gate_count": 1551,
+  "band_counts": {
+    "<3": 139,
+    "3-5": 149,
+    ">5": 212
+  },
+  "loc_counts": {
+    "Garage": 278,
+    "Pave": 222
+  },
+  "count_bucket_counts": {
+    "1": 249,
+    "2": 200,
+    "3+": 51
+  },
+  "metas": [
+    {
+      "recording": "Garage1",
+      "r3d_path": "E:\\Research\\Proximity\\Analysis\\Expe1\\Garage1\\Shareable\\2026-06-25--15-00-36.r3d",
+      "fps": 60.0,
+      "frame_count": 3292,
+      "sample_step": 12,
+      "actual_sample_fps": 5.0,
+      "sampled_frames": 275,
+      "sampling_warning": null
+    },
+    {
+      "recording": "Garage2",
+      "r3d_path": "E:\\Research\\Proximity\\Analysis\\Expe1\\Garage2\\Shareable\\2026-06-25--15-02-11.r3d",
+      "fps": 60.0,
+      "frame_count": 4051,
+      "sample_step": 12,
+      "actual_sample_fps": 5.0,
+      "sampled_frames": 338,
+      "sampling_warning": null
+    },
+    {
+      "recording": "Garage3",
+      "r3d_path": "E:\\Research\\Proximity\\Analysis\\Expe1\\Garage3\\Shareable\\2026-06-25--15-04-14.r3d",
+      "fps": 60.0,
+      "frame_count": 3651,
+      "sample_step": 12,
+      "actual_sample_fps": 5.0,
+      "sampled_frames": 305,
+      "sampling_warning": null
+    },
+    {
+      "recording": "Garage4",
+      "r3d_path": "E:\\Research\\Proximity\\Analysis\\Expe1\\Garage4\\Shareable\\2026-06-25--15-06-13.r3d",
+      "fps": 30.0,
+      "frame_count": 2256,
+      "sample_step": 6,
+      "actual_sample_fps": 5.0,
+      "sampled_frames": 376,
+      "sampling_warning": null
+    },
+    {
+      "recording": "Pave1",
+      "r3d_path": "E:\\Research\\Proximity\\Analysis\\Expe1\\Pave1\\Shareable\\2026-06-25--16-34-28.r3d",
+      "fps": 30.0,
+      "frame_count": 2686,
+      "sample_step": 6,
+      "actual_sample_fps": 5.0,
+      "sampled_frames": 448,
+      "sampling_warning": null
+    },
+    {
+      "recording": "Pave2",
+      "r3d_path": "E:\\Research\\Proximity\\Analysis\\Expe1\\Pave2\\Shareable\\2026-06-25--16-27-50.r3d",
+      "fps": 30.0,
+      "frame_count": 1814,
+      "sample_step": 6,
+      "actual_sample_fps": 5.0,
+      "sampled_frames": 303,
+      "sampling_warning": null
+    }
+  ],
+  "model": "E:\\Research\\Proximity\\Analysis\\624Analysis\\outputs\\sampled_5fps_qa\\models\\yolo11n.pt",
+  "device": "cuda",
+  "outputs": {
+    "dense_candidates_csv": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\dense_candidates.csv",
+    "frames_csv": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\frames.csv",
+    "detections_csv": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\detections.csv",
+    "images_dir": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\images",
+    "final_distribution_md": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\final_distribution.md",
+    "dataset_notes_zh_md": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\dataset_notes_zh.md",
+    "summary_json": "E:\\Research\\Proximity\\Analysis\\Expe1\\625Analysis\\outputs\\dataset_500\\dataset_summary.json"
+  },
+  "recommended_annotation_file": "annotations/worker_gt_compact.csv",
+  "recommended_annotation_json": "annotations/worker_gt_compact.json",
+  "final_worker_gt": {
+    "updated_at_utc": "2026-07-02T18:16:15Z",
+    "image_count": 500,
+    "worker_count": 806,
+    "row_unit": "one final worker instance per row",
+    "distance_classes": [
+      "<3",
+      "3-6",
+      ">6"
+    ],
+    "distance_class_3_counts": {
+      "<3": 164,
+      "3-6": 312,
+      ">6": 330
+    },
+    "manual_distance_band_counts": {
+      "": 657,
+      ">6": 124,
+      "3-6": 18,
+      "<3": 7
+    },
+    "valid_lidar_depth_count": 657,
+    "missing_lidar_depth_count": 149,
+    "scene_type_counts": {
+      "indoor_garage": 498,
+      "outdoor_pavement_closed_road_sim": 308
+    },
+    "recording_worker_counts": {
+      "Garage1": 76,
+      "Garage2": 49,
+      "Garage3": 105,
+      "Garage4": 268,
+      "Pave1": 204,
+      "Pave2": 104
+    },
+    "semantic_counts": {
+      "high_visibility_vest": {
+        "true": 664,
+        "false": 125,
+        "uncertain": 17
+      },
+      "helmet_status": {
+        "absent": 198,
+        "uncertain": 17,
+        "worn_unsecured": 79,
+        "worn_secured": 117,
+        "worn_unknown": 382,
+        "in_hand": 13
+      },
+      "helmet_worn_binary": {
+        "false": 211,
+        "uncertain": 17,
+        "true": 578
+      },
+      "orientation": {
+        "Back": 261,
+        "Side": 246,
+        "Facing": 282,
+        "uncertain": 17
+      },
+      "occlusion_level": {
+        "none": 589,
+        "partial": 178,
+        "heavy": 31,
+        "uncertain": 8
+      },
+      "phone_status": {
+        "none": 692,
+        "uncertain": 94,
+        "call": 12,
+        "viewing": 8
+      }
+    },
+    "primary_files": [
+      "annotations/worker_gt_compact.csv",
+      "annotations/worker_gt_compact.json",
+      "annotations/worker_gt_merged.csv",
+      "annotations/worker_gt_merged.json"
+    ]
+  },
+  "legacy_frame_selection_note": "band_counts, frames.csv, detections_yolo_raw.csv, and final_distribution.md describe early frame-selection/raw YOLO provenance and may contain the old <3/3-5/>5 preliminary bands. Use final_worker_gt and worker_gt_compact for final labels."
+}

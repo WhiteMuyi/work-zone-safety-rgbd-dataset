@@ -1,13 +1,13 @@
-# Work-Zone RGB-D Safety Dataset (Face-redacted review copy)
+# Work-Zone RGB-D Safety Dataset
 
-This review copy contains **1,685 RGB PNG frames** and **3,278 worker annotations** across two waves. It includes worker bounding boxes and LiDAR-derived distances where available. Wave 1 also includes worker safety attributes.
+This dataset contains **1,685 RGB PNG frames** and **3,278 worker annotations** across two waves. It includes worker bounding boxes and LiDAR-derived distances where available. Wave 1 also includes worker safety attributes.
 
 | Wave | Images | Worker annotations | Files |
 | --- | ---: | ---: | --- |
 | 1 | 500 | 806 | [Images](images/) and [annotations](annotations/) |
 | 2 | 1,185 | 2,472 | [Images and annotations](workzone_rgbd_dataset_wave2/) |
 
-Face redaction used automated detection, targeted visual review, and manual corrections. Full-frame visual review is pending before public distribution. The [review release](https://github.com/WhiteMuyi/work-zone-safety-rgbd-dataset-redacted/releases/tag/v0.1.0-review) provides the complete dataset as a ZIP under Assets.
+Face redaction used automated detection, targeted visual review, and manual corrections. Download the complete dataset ZIP under **Assets** on the [v1.0.0 release page](https://github.com/WhiteMuyi/work-zone-safety-rgbd-dataset/releases/tag/v1.0.0).
 
 The following notes describe Wave 1. See the [Wave 2 README](workzone_rgbd_dataset_wave2/README.md) for its schema and usage notes.
 
